@@ -610,12 +610,12 @@ const Home = () => {
                     className="w-10 h-10 rounded-full border-2 border-white object-cover"
                   />
                   <div className="w-10 h-10 rounded-full bg-green-600 text-white text-xs font-semibold flex items-center justify-center border-2 border-white">
-                    +4586
+                    +4
                   </div>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-gray-900">
-                    4.5k+ Satisfied Farmers
+                    5 Farmers
                   </p>
                   <p className="text-xs text-gray-500">
                     Using Kiota Poultry to monitor their flocks.

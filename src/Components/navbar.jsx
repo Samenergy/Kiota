@@ -79,7 +79,7 @@ const Navbar = () => {
                     <div className="text-sm text-gray-600">Mobile monitoring & management</div>
                   </Link>
                   <Link
-                    to="/products"
+                    to="/smart-brooder"
                     className="block px-6 py-4 text-gray-700 hover:bg-green-50 transition-colors"
                   >
                     <div className="font-semibold text-green-600">Smart Brooder</div>
@@ -143,10 +143,10 @@ const Navbar = () => {
               Farm App
             </Link>
             <Link
-              to="/products"
+              to="/smart-brooder"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-6 py-3 rounded-lg font-semibold ${
-                isActive('/products') ? 'bg-gradient-to-r from-green-500 to-green-700 text-white' : 'text-gray-700 hover:bg-green-50'
+                isActive('/smart-brooder') ? 'bg-gradient-to-r from-green-500 to-green-700 text-white' : 'text-gray-700 hover:bg-green-50'
               }`}
             >
               Smart Brooder
