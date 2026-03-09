@@ -35,18 +35,18 @@ const Home = () => {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-fade-in">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight">
                 <span className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 bg-clip-text text-transparent">
                   Raise Smart.
                   <br />
                   Grow Strong.
                 </span>
                 <br />
-                <span className="text-black text-4xl">
+                <span className="text-black text-2xl sm:text-3xl md:text-4xl">
                   Transform Your Farm Today
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl text-black leading-relaxed font-medium">
+              <p className="text-base sm:text-lg md:text-xl text-black leading-relaxed font-medium">
                 Kiota Poultry transforms your poultry farm with intelligent
                 monitoring, real-time alerts, and smart automation that keeps
                 your birds healthy and your business profitable.
@@ -54,14 +54,14 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="px-8 py-4 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2"
+                  className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-xl font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                 >
                   <span>Get a Demo</span>
                   <ArrowRight size={20} />
                 </Link>
                 <Link
                   to="/contact"
-                  className="px-8 py-4 bg-white text-green-600 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 border-green-200"
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-green-600 rounded-xl font-bold text-base sm:text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 border-green-200"
                 >
                   Talk to an Expert
                 </Link>
@@ -146,10 +146,10 @@ const Home = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl flex items-center justify-center mb-6">
                 <Target className="text-white" size={32} />
               </div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">
                 Mission
               </h3>
-              <p className="text-gray-700 leading-relaxed text-lg">
+              <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
                 To empower poultry farmers with smart technology that improves
                 productivity, greenuces losses, and simplifies farm management.
               </p>
@@ -158,10 +158,10 @@ const Home = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
                 <Zap className="text-white" size={32} />
               </div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">
                 Vision
               </h3>
-              <p className="text-gray-700 leading-relaxed text-lg">
+              <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
                 To lead the digital transformation of poultry farming in Africa
                 and beyond through innovative, affordable, and scalable
                 solutions.
@@ -208,7 +208,7 @@ const Home = () => {
               <h3 className="text-2xl font-bold text-green-600 mb-6">
                 Kiota Poultry solves these problems:
               </h3>
-              <p className="text-gray-700 leading-relaxed text-lg">
+              <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
                 Using smart monitoring and automation systems that give farmers
                 complete control and insight into their operations.
               </p>

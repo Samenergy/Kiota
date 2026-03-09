@@ -26,12 +26,12 @@ const FarmApp = () => {
                 <Smartphone size={20} />
                 <span className="font-semibold">Mobile App</span>
               </div>
-              <h1 className="text-5xl md:text-6xl font-black leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
                 Kiota Poultry
                 <br />
                 Farm App
               </h1>
-              <p className="text-xl opacity-90 leading-relaxed">
+              <p className="text-lg sm:text-xl opacity-90 leading-relaxed">
                 Monitor and manage your poultry farm from anywhere, anytime.
                 Real-time alerts, smart analytics, and complete farm control in
                 the palm of your hand.
@@ -41,7 +41,7 @@ const FarmApp = () => {
                   href="https://apps.apple.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center space-x-3 px-6 py-4 bg-black rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                  className="inline-flex items-center justify-center space-x-3 px-4 sm:px-6 py-3 sm:py-4 bg-black rounded-xl font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                 >
                   <FaApple size={24} />
                   <div className="text-left">
@@ -53,7 +53,7 @@ const FarmApp = () => {
                   href="https://play.google.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center space-x-3 px-6 py-4 bg-black rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                  className="inline-flex items-center justify-center space-x-3 px-4 sm:px-6 py-3 sm:py-4 bg-black rounded-xl font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                 >
                   <IoLogoGooglePlaystore size={24} />
                   <div className="text-left">

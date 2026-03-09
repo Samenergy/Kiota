@@ -68,7 +68,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-green-600">
         <div className="max-w-4xl mx-auto text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-black mb-6">About Kiota Poultry</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6">About Kiota Poultry</h1>
           <p className="text-xl opacity-90">
             A social enterprise revolutionizing small-scale poultry farming through technology and innovation
           </p>
@@ -83,8 +83,8 @@ const About = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6">
                 <Target className="text-white" size={32} />
               </div>
-              <h2 className="text-3xl font-black text-gray-800 mb-4">Our Mission</h2>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <h2 className="text-2xl sm:text-3xl font-black text-gray-800 mb-4">Our Mission</h2>
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
                 To empower small-scale poultry farmers with accessible, affordable smart farming technology that enhances animal welfare, increases productivity, and builds climate resilience. We're committed to transforming traditional farming practices through innovation that makes a tangible difference in farmers' lives and livelihoods.
               </p>
             </div>
@@ -93,8 +93,8 @@ const About = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
                 <Eye className="text-white" size={32} />
               </div>
-              <h2 className="text-3xl font-black text-gray-800 mb-4">Our Vision</h2>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <h2 className="text-2xl sm:text-3xl font-black text-gray-800 mb-4">Our Vision</h2>
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
                 To become Africa's leading smart agriculture platform, where every small-scale poultry farmer has access to technology that enables sustainable, profitable farming. We envision a future where data-driven insights and IoT solutions are standard tools for farmers adapting to climate change and market demands.
               </p>
             </div>
@@ -113,13 +113,13 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
                 Kiota Poultry was founded in 2022 by a team of agricultural economists, IoT engineers, and passionate farmers who saw the challenges facing small-scale poultry producers firsthand. We witnessed how climate change, disease outbreaks, and lack of real-time data were affecting farm productivity and animal welfare.
               </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
                 We knew technology could help, but existing solutions were too expensive and complex for small-scale farmers. So we set out to build something different: affordable IoT sensors, intuitive mobile apps, and AI analytics specifically designed for the realities of Kenyan poultry farming.
               </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
                 Today, we're proud to support over 500 farms across Kenya, monitoring more than 10 million birds and helping farmers increase their productivity by an average of 35% while greenucing mortality rates by 15%. But we're just getting started.
               </p>
             </div>

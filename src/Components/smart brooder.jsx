@@ -89,26 +89,26 @@ const SmartBrooder = () => {
                 <Cpu size={20} />
                 <span className="font-semibold">Smart Hardware</span>
               </div>
-              <h1 className="text-5xl md:text-6xl font-black leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
                 Smart Brooder
                 <br />
-                <span className="text-3xl md:text-4xl">Intelligent Chick Management</span>
+                <span className="text-2xl sm:text-3xl md:text-4xl">Intelligent Chick Management</span>
               </h1>
-              <p className="text-xl opacity-90 leading-relaxed">
+              <p className="text-lg sm:text-xl opacity-90 leading-relaxed">
                 Revolutionize your poultry brooding with our IoT-powered smart brooder system. 
                 Monitor temperature, humidity, and chick health in real-time from your smartphone.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center px-8 py-4 bg-white text-green-700 rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                  className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-green-700 rounded-xl font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                 >
                   Get Quote
                   <Zap className="ml-2" size={20} />
                 </Link>
                 <Link
                   to="/app"
-                  className="inline-flex items-center px-8 py-4 bg-white/20 backdrop-blur-sm text-white rounded-xl font-bold text-lg border-2 border-white/30 hover:bg-white/30 transition-all duration-300"
+                  className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white/20 backdrop-blur-sm text-white rounded-xl font-bold text-base sm:text-lg border-2 border-white/30 hover:bg-white/30 transition-all duration-300"
                 >
                   View App
                   <Smartphone className="ml-2" size={20} />
