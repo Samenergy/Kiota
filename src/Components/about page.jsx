@@ -15,16 +15,16 @@ import { Target, Eye, Heart, Users, Award, Globe, Lightbulb, TrendingUp } from '
 const About = () => {
   const team = [
     {
-      name: 'Team Member 1',
+      name: 'Kyla Purity',
       role: 'CEO & Founder',
-      image: '/team/member1.jpg', // Replace with your team photo
-      bio: 'Add your team member bio here'
+      image: '/kyla.jpeg',
+      bio: 'Visionary leader with a passion for agricultural technology and sustainable farming solutions. Kyla founded Kiota Poultry to revolutionize how farmers manage their operations through smart technology and data-driven insights.'
     },
     {
-      name: 'Team Member 2',
+      name: 'Samuel Dushime',
       role: 'CTO',
-      image: '/team/member2.jpg', // Replace with your team photo
-      bio: 'Add your team member bio here'
+      image: '/IMG_5317.JPG',
+      bio: 'Technology expert with extensive experience in IoT systems and software architecture. Samuel leads the technical vision at Kiota Poultry, developing innovative smart farming solutions that bridge the gap between traditional agriculture and cutting-edge technology.'
     },
     {
       name: 'Team Member 3',
