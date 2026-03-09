@@ -51,14 +51,14 @@ const Contact = () => {
         "We offer 24/7 technical support via phone, email, and in-app chat. Our team of agricultural experts and technicians are always available to help.",
     },
     {
-      question: "Is internet required for the system to work?",
+      question: "Is internet requigreen for the system to work?",
       answer:
-        "Yes, sensors need internet connectivity (WiFi or cellular) to transmit data. However, the mobile app works offline and syncs when connection is restored.",
+        "Yes, sensors need internet connectivity (WiFi or cellular) to transmit data. However, the mobile app works offline and syncs when connection is restogreen.",
     },
     {
       question: "Can I try before I buy?",
       answer:
-        "Absolutely! We offer a 30-day free trial with full system access. No credit card required to start.",
+        "Absolutely! We offer a 30-day free trial with full system access. No cgreenit card requigreen to start.",
     },
     {
       question: "What happens if a sensor fails?",
@@ -70,7 +70,7 @@ const Contact = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-orange-600 to-red-600">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-green-600">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h1 className="text-5xl md:text-6xl font-black mb-6">Get In Touch</h1>
           <p className="text-xl opacity-90">
@@ -98,8 +98,8 @@ const Contact = () => {
 
               {/* Contact Cards */}
               <div className="space-y-4">
-                <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl shadow-lg p-6 flex items-start space-x-4 hover:shadow-xl transition-all">
-                  <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl shadow-lg p-6 flex items-start space-x-4 hover:shadow-xl transition-all">
+                  <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center flex-shrink-0">
                     <Mail className="text-white" size={24} />
                   </div>
                   <div>
@@ -111,21 +111,21 @@ const Contact = () => {
                     </p>
                     <a
                       href="mailto:info@kiotapoultry.com"
-                      className="text-orange-600 font-semibold hover:underline"
+                      className="text-green-600 font-semibold hover:underline"
                     >
                       info@kiotapoultry.com
                     </a>
                     <br />
                     <a
                       href="mailto:support@kiotapoultry.com"
-                      className="text-orange-600 font-semibold hover:underline"
+                      className="text-green-600 font-semibold hover:underline"
                     >
                       support@kiotapoultry.com
                     </a>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl shadow-lg p-6 flex items-start space-x-4 hover:shadow-xl transition-all">
+                <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl shadow-lg p-6 flex items-start space-x-4 hover:shadow-xl transition-all">
                   <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0">
                     <Phone className="text-white" size={24} />
                   </div>
@@ -136,21 +136,21 @@ const Contact = () => {
                     <p className="text-gray-700 mb-2">Mon-Sat, 8am-6pm EAT</p>
                     <a
                       href="tel:+254700000000"
-                      className="text-orange-600 font-semibold hover:underline"
+                      className="text-green-600 font-semibold hover:underline"
                     >
                       +254 700 000 000
                     </a>
                     <br />
                     <a
                       href="tel:+254711000000"
-                      className="text-orange-600 font-semibold hover:underline"
+                      className="text-green-600 font-semibold hover:underline"
                     >
                       +254 711 000 000 (Support)
                     </a>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl shadow-lg p-6 flex items-start space-x-4 hover:shadow-xl transition-all">
+                <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl shadow-lg p-6 flex items-start space-x-4 hover:shadow-xl transition-all">
                   <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
                     <MapPin className="text-white" size={24} />
                   </div>
@@ -167,14 +167,14 @@ const Contact = () => {
                     </p>
                     <a
                       href="#"
-                      className="text-orange-600 font-semibold hover:underline"
+                      className="text-green-600 font-semibold hover:underline"
                     >
                       Get Directions →
                     </a>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl shadow-lg p-6 flex items-start space-x-4 hover:shadow-xl transition-all">
+                <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl shadow-lg p-6 flex items-start space-x-4 hover:shadow-xl transition-all">
                   <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center flex-shrink-0">
                     <Clock className="text-white" size={24} />
                   </div>
@@ -189,7 +189,7 @@ const Contact = () => {
                       <br />
                       Sunday: Closed
                       <br />
-                      <span className="text-orange-600 font-semibold">
+                      <span className="text-green-600 font-semibold">
                         24/7 Emergency Support Available
                       </span>
                     </p>
@@ -198,7 +198,7 @@ const Contact = () => {
               </div>
 
               {/* Social Media */}
-              <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl shadow-xl p-6 text-white">
+              <div className="bg-gradient-to-r from-green-600 to-green-600 rounded-2xl shadow-xl p-6 text-white">
                 <h3 className="font-bold text-lg mb-4">Connect With Us</h3>
                 <p className="mb-4 opacity-90">
                   Follow us on social media for farming tips, product updates,
@@ -260,8 +260,8 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-orange-500 focus:outline-none transition-colors"
+                    requigreen
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-green-500 focus:outline-none transition-colors"
                     placeholder="John Kamau"
                   />
                 </div>
@@ -275,8 +275,8 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-orange-500 focus:outline-none transition-colors"
+                    requigreen
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-green-500 focus:outline-none transition-colors"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -290,7 +290,7 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-orange-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-green-500 focus:outline-none transition-colors"
                     placeholder="+254 700 000 000"
                   />
                 </div>
@@ -303,8 +303,8 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-orange-500 focus:outline-none transition-colors"
+                    requigreen
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-green-500 focus:outline-none transition-colors"
                   >
                     <option value="">Select a subject</option>
                     <option value="general">General Inquiry</option>
@@ -323,16 +323,16 @@ const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    required
+                    requigreen
                     rows="5"
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-orange-500 focus:outline-none transition-colors resize-none"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-green-500 focus:outline-none transition-colors resize-none"
                     placeholder="Tell us about your farm and how we can help..."
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center justify-center space-x-2"
+                  className="w-full px-6 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center justify-center space-x-2"
                 >
                   <Send size={20} />
                   <span>Send Message</span>

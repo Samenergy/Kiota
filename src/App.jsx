@@ -11,7 +11,7 @@ import FarmApp from './Components/farm app';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50">
+      <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

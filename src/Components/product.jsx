@@ -23,14 +23,14 @@ const Products = () => {
       icon: Thermometer,
       title: 'Environmental Sensors',
       description: 'Complete sensor network for monitoring all critical farm conditions',
-      color: 'from-orange-500 to-red-600',
+      color: 'from-green-500 to-green-600',
       features: [
         'Temperature monitoring (±0.1°C accuracy)',
         'Humidity tracking (±2% accuracy)',
         'Ammonia/CO₂ level detection',
         'Light intensity measurement',
         'Wireless connectivity (WiFi/LoRa)',
-        'Battery backup & solar powered',
+        'Battery backup & solar powegreen',
         'Weather-resistant housing',
         'Real-time data transmission'
       ],
@@ -49,7 +49,7 @@ const Products = () => {
       description: 'Central processing unit that manages all sensors and automates responses',
       color: 'from-blue-500 to-indigo-600',
       features: [
-        'AI-powered analytics engine',
+        'AI-powegreen analytics engine',
         'Automated ventilation control',
         'Smart lighting management',
         'Temperature regulation',
@@ -148,7 +148,7 @@ const Products = () => {
       features: [
         '5 IoT sensor units',
         'Full mobile & web app',
-        'AI-powered analytics',
+        'AI-powegreen analytics',
         'SMS + Email + Push alerts',
         'Priority support',
         'Up to 3 farm locations',
@@ -185,7 +185,7 @@ const Products = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-orange-600 to-red-600">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-green-600">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h1 className="text-5xl md:text-6xl font-black mb-6">Our Products</h1>
           <p className="text-xl opacity-90 mb-8">
@@ -198,7 +198,7 @@ const Products = () => {
               onClick={() => setSelectedProduct('farm-app')}
               className={`px-8 py-4 rounded-xl font-bold text-lg transition-all ${
                 selectedProduct === 'farm-app'
-                  ? 'bg-white text-orange-600 shadow-xl scale-105'
+                  ? 'bg-white text-green-600 shadow-xl scale-105'
                   : 'bg-white/20 text-white hover:bg-white/30'
               }`}
             >
@@ -208,7 +208,7 @@ const Products = () => {
               onClick={() => setSelectedProduct('smart-brooder')}
               className={`px-8 py-4 rounded-xl font-bold text-lg transition-all ${
                 selectedProduct === 'smart-brooder'
-                  ? 'bg-white text-orange-600 shadow-xl scale-105'
+                  ? 'bg-white text-green-600 shadow-xl scale-105'
                   : 'bg-white/20 text-white hover:bg-white/30'
               }`}
             >
@@ -245,11 +245,11 @@ const Products = () => {
               </div>
 
               <div className={index % 2 === 1 ? 'md:order-1' : ''}>
-                <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-3xl shadow-xl p-8">
+                <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-3xl shadow-xl p-8">
                   <h3 className="text-2xl font-bold text-gray-800 mb-6">Technical Specifications</h3>
                   <div className="space-y-4">
                     {Object.entries(product.specs).map(([key, value], idx) => (
-                      <div key={idx} className="flex justify-between items-start pb-4 border-b border-orange-200 last:border-0">
+                      <div key={idx} className="flex justify-between items-start pb-4 border-b border-green-200 last:border-0">
                         <span className="text-gray-600 font-semibold">{key}</span>
                         <span className="text-gray-800 font-bold text-right ml-4">{value}</span>
                       </div>
@@ -267,7 +267,7 @@ const Products = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-4">
-              Optional <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Upgrades</span>
+              Optional <span className="bg-gradient-to-r from-green-600 to-green-600 bg-clip-text text-transparent">Upgrades</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Enhance your Smart Brooder system with powerful add-ons
@@ -276,13 +276,13 @@ const Products = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {addons.map((addon, index) => (
-              <div key={index} className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center mb-4">
+              <div key={index} className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-4">
                   <addon.icon className="text-white" size={24} />
                 </div>
                 <h3 className="text-lg font-bold text-gray-800 mb-2">{addon.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{addon.description}</p>
-                <div className="text-2xl font-black text-orange-600">{addon.price}</div>
+                <div className="text-2xl font-black text-green-600">{addon.price}</div>
               </div>
             ))}
           </div>
@@ -294,7 +294,7 @@ const Products = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-4">
-              Simple <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Pricing</span>
+              Simple <span className="bg-gradient-to-r from-green-600 to-green-600 bg-clip-text text-transparent">Pricing</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Choose the plan that fits your farm's needs
@@ -303,9 +303,9 @@ const Products = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {pricingPlans.map((plan, index) => (
-              <div key={index} className={`rounded-3xl shadow-2xl overflow-hidden ${plan.popular ? 'ring-4 ring-orange-500 transform scale-105' : 'bg-white'}`}>
+              <div key={index} className={`rounded-3xl shadow-2xl overflow-hidden ${plan.popular ? 'ring-4 ring-green-500 transform scale-105' : 'bg-white'}`}>
                 {plan.popular && (
-                  <div className="bg-gradient-to-r from-orange-500 to-red-600 text-white text-center py-2 font-bold text-sm">
+                  <div className="bg-gradient-to-r from-green-500 to-green-600 text-white text-center py-2 font-bold text-sm">
                     MOST POPULAR
                   </div>
                 )}
@@ -319,7 +319,7 @@ const Products = () => {
                       {plan.period !== 'pricing' && <span className="text-gray-600 ml-2">hardware</span>}
                     </div>
                     {plan.monthly !== 'Custom' && (
-                      <div className="text-orange-600 font-bold text-lg mt-2">
+                      <div className="text-green-600 font-bold text-lg mt-2">
                         ${plan.monthly}/month subscription
                       </div>
                     )}
@@ -338,8 +338,8 @@ const Products = () => {
                     to="/contact"
                     className={`block w-full text-center px-6 py-4 rounded-xl font-bold transition-all ${
                       plan.popular
-                        ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white shadow-lg hover:shadow-xl hover:scale-105'
-                        : 'bg-orange-100 text-orange-600 hover:bg-orange-200'
+                        ? 'bg-gradient-to-r from-green-500 to-green-600 text-white shadow-lg hover:shadow-xl hover:scale-105'
+                        : 'bg-green-100 text-green-600 hover:bg-green-200'
                     }`}
                   >
                     Get Started
@@ -353,7 +353,7 @@ const Products = () => {
             <p className="text-gray-600 mb-4">Need a custom solution?</p>
             <Link
               to="/contact"
-              className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-xl font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+              className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-xl font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
             >
               <span>Contact Sales</span>
               <ArrowRight size={20} />
@@ -372,7 +372,7 @@ const Products = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-4">
-              Farm <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">App</span>
+              Farm <span className="bg-gradient-to-r from-green-600 to-green-600 bg-clip-text text-transparent">App</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Monitor and manage your entire poultry farm from your smartphone
@@ -406,7 +406,7 @@ const Products = () => {
 
           {/* Features */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl shadow-lg p-8">
+            <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Key Features</h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
@@ -464,18 +464,18 @@ const Products = () => {
           </div>
 
           {/* Download Section */}
-          <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-3xl shadow-2xl p-12 text-center text-white">
+          <div className="bg-gradient-to-r from-green-600 to-green-600 rounded-3xl shadow-2xl p-12 text-center text-white">
             <h3 className="text-3xl font-black mb-4">Download Farm App</h3>
             <p className="text-xl opacity-90 mb-8">Available for iOS and Android devices</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-white text-orange-600 rounded-xl font-bold text-lg hover:scale-105 transition-all flex items-center justify-center space-x-3">
+              <button className="px-8 py-4 bg-white text-green-600 rounded-xl font-bold text-lg hover:scale-105 transition-all flex items-center justify-center space-x-3">
                 <span>🍎</span>
                 <div className="text-left">
                   <div className="text-xs">Download on</div>
                   <div className="text-lg">App Store</div>
                 </div>
               </button>
-              <button className="px-8 py-4 bg-white text-orange-600 rounded-xl font-bold text-lg hover:scale-105 transition-all flex items-center justify-center space-x-3">
+              <button className="px-8 py-4 bg-white text-green-600 rounded-xl font-bold text-lg hover:scale-105 transition-all flex items-center justify-center space-x-3">
                 <span>🤖</span>
                 <div className="text-left">
                   <div className="text-xs">Get it on</div>

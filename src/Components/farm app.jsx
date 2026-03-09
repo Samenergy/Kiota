@@ -2,8 +2,6 @@ import React from "react";
 import {
   Smartphone,
   Download,
-  Apple,
-  Play,
   Check,
   BarChart3,
   Bell,
@@ -13,12 +11,14 @@ import {
   TrendingUp,
   Users,
 } from "lucide-react";
+import { FaApple } from "react-icons/fa6";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 const FarmApp = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-orange-600 to-red-600">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-green-600">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-white space-y-6">
@@ -43,7 +43,7 @@ const FarmApp = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center space-x-3 px-6 py-4 bg-black rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                 >
-                  <Apple size={24} />
+                  <FaApple size={24} />
                   <div className="text-left">
                     <div className="text-xs opacity-90">Download on the</div>
                     <div className="text-lg">App Store</div>
@@ -55,7 +55,7 @@ const FarmApp = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center space-x-3 px-6 py-4 bg-black rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                 >
-                  <Play size={24} />
+                  <IoLogoGooglePlaystore size={24} />
                   <div className="text-left">
                     <div className="text-xs opacity-90">Get it on</div>
                     <div className="text-lg">Google Play</div>
@@ -68,7 +68,7 @@ const FarmApp = () => {
                 <div className="absolute inset-0 bg-white/20 rounded-3xl blur-3xl"></div>
                 <div className="relative flex justify-center items-center">
                   <img
-                    src="/app.svg"
+                    src="/23.svg"
                     alt="Kiota Poultry Farm App on phone"
                     className="max-w-[900px] h-auto object-contain drop-shadow-2xl"
                   />
@@ -94,8 +94,8 @@ const FarmApp = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Feature 1 */}
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center mb-6">
+            <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6">
                 <BarChart3 className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-black text-gray-800 mb-3">
@@ -108,7 +108,7 @@ const FarmApp = () => {
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+            <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
               <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-6">
                 <Bell className="text-white" size={32} />
               </div>
@@ -122,7 +122,7 @@ const FarmApp = () => {
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+            <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6">
                 <Shield className="text-white" size={32} />
               </div>
@@ -130,13 +130,13 @@ const FarmApp = () => {
                 Secure & Reliable
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Your data is encrypted and stored securely. Bank-level security
+                Your data is encrypted and stogreen securely. Bank-level security
                 for your farm's sensitive information.
               </p>
             </div>
 
             {/* Feature 4 */}
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+            <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
               <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mb-6">
                 <Cloud className="text-white" size={32} />
               </div>
@@ -150,8 +150,8 @@ const FarmApp = () => {
             </div>
 
             {/* Feature 5 */}
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
-              <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center mb-6">
+            <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+              <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-green-600 rounded-xl flex items-center justify-center mb-6">
                 <Zap className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-black text-gray-800 mb-3">
@@ -164,7 +164,7 @@ const FarmApp = () => {
             </div>
 
             {/* Feature 6 */}
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+            <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
               <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-xl flex items-center justify-center mb-6">
                 <TrendingUp className="text-white" size={32} />
               </div>
@@ -181,7 +181,7 @@ const FarmApp = () => {
       </section>
 
       {/* Download Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 via-red-50 to-orange-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-green-50 via-green-50 to-green-50">
         <div className="max-w-7xl mx-auto">
           <div className="bg-white rounded-3xl shadow-2xl p-12 md:p-16">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -239,7 +239,7 @@ const FarmApp = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center space-x-3 px-8 py-4 bg-black rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                   >
-                    <Apple size={28} />
+                    <FaApple size={28} />
                     <div className="text-left text-white">
                       <div className="text-xs opacity-90">Download on the</div>
                       <div className="text-xl">App Store</div>
@@ -251,7 +251,7 @@ const FarmApp = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center space-x-3 px-8 py-4 bg-black rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                   >
-                    <Play size={28} />
+                    <IoLogoGooglePlaystore size={28} />
                     <div className="text-left text-white">
                       <div className="text-xs opacity-90">Get it on</div>
                       <div className="text-xl">Google Play</div>
@@ -261,15 +261,15 @@ const FarmApp = () => {
               </div>
 
               <div className="relative">
-                <div className="relative bg-gradient-to-br from-orange-100 to-red-100 rounded-3xl p-8 border-2 border-orange-200">
+                <div className="relative bg-gradient-to-br from-green-100 to-green-100 rounded-3xl p-8 border-2 border-green-200">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-white rounded-xl p-4 shadow-lg text-center">
-                      <Download className="text-orange-600 mx-auto mb-2" size={32} />
+                      <Download className="text-green-600 mx-auto mb-2" size={32} />
                       <div className="text-2xl font-black text-gray-800">10K+</div>
                       <div className="text-sm text-gray-600">Downloads</div>
                     </div>
                     <div className="bg-white rounded-xl p-4 shadow-lg text-center">
-                      <Users className="text-red-600 mx-auto mb-2" size={32} />
+                      <Users className="text-green-600 mx-auto mb-2" size={32} />
                       <div className="text-2xl font-black text-gray-800">5K+</div>
                       <div className="text-sm text-gray-600">Active Users</div>
                     </div>
@@ -302,10 +302,10 @@ const FarmApp = () => {
             directly
           </p>
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg">
+            <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl p-8 shadow-lg">
               <div className="w-48 h-48 bg-white rounded-xl mx-auto mb-6 flex items-center justify-center border-4 border-gray-200">
                 <div className="text-center">
-                  <Apple size={64} className="text-gray-400 mx-auto mb-2" />
+                  <FaApple size={64} className="text-gray-400 mx-auto mb-2" />
                   <div className="text-sm text-gray-500">QR Code</div>
                 </div>
               </div>
@@ -316,10 +316,10 @@ const FarmApp = () => {
                 Scan with your iPhone camera to download
               </p>
             </div>
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg">
+            <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl p-8 shadow-lg">
               <div className="w-48 h-48 bg-white rounded-xl mx-auto mb-6 flex items-center justify-center border-4 border-gray-200">
                 <div className="text-center">
-                  <Play size={64} className="text-gray-400 mx-auto mb-2" />
+                  <IoLogoGooglePlaystore size={64} className="text-gray-400 mx-auto mb-2" />
                   <div className="text-sm text-gray-500">QR Code</div>
                 </div>
               </div>

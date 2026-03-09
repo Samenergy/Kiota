@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
@@ -19,19 +19,24 @@ import {
 } from "lucide-react";
 
 const Home = () => {
+  const [activeFaq, setActiveFaq] = useState(null);
+
+  const toggleFaq = (index) => {
+    setActiveFaq(activeFaq === index ? null : index);
+  };
   return (
     <div className="pt-20">
       {/* Hero Section */}
       <section
-        className="py-20 px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: "url('/slider3.jpg')" }}
+        className="py-20 px-4 sm:px-6 lg:px-8 bg-cover bg-right bg-no-repeat relative"
+        style={{ backgroundImage: "url('/we.png')", backgroundSize: '35% auto' }}
       >
         <div className="absolute inset-0"></div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-fade-in">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
-                <span className="bg-gradient-to-r from-orange-600 via-red-600 to-orange-700 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 bg-clip-text text-transparent">
                   Raise Smart.
                   <br />
                   Grow Strong.
@@ -49,14 +54,14 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2"
+                  className="px-8 py-4 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2"
                 >
                   <span>Get a Demo</span>
                   <ArrowRight size={20} />
                 </Link>
                 <Link
                   to="/contact"
-                  className="px-8 py-4 bg-white text-orange-600 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 border-orange-200"
+                  className="px-8 py-4 bg-white text-green-600 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 border-green-200"
                 >
                   Talk to an Expert
                 </Link>
@@ -70,7 +75,7 @@ const Home = () => {
             </div>
 
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 rounded-3xl blur-3xl opacity-20 animate-pulse"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-green-400 to-green-500 rounded-3xl blur-3xl opacity-20 animate-pulse"></div>
             </div>
           </div>
         </div>
@@ -95,19 +100,19 @@ const Home = () => {
                 </div>
 
                 {/* Circular badge, similar to reference design */}
-                <div className="hidden md:flex items-center gap-2 absolute -right-30 bottom-8 bg-white rounded-full shadow-xl px-4 py-2 border border-orange-200">
-                  <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center">
-                    <Users className="text-orange-600" size={18} />
+                <div className="hidden md:flex items-center gap-2 absolute -right-30 bottom-8 bg-white rounded-full shadow-xl px-4 py-2 border border-green-200">
+                  <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+                    <Users className="text-green-600" size={18} />
                   </div>
                   <div className="text-xs font-semibold text-gray-700 leading-tight">
                     <div>More about us</div>
-                    <div className="text-orange-600">Smart farming team</div>
+                    <div className="text-green-600">Smart farming team</div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="space-y-6">
-              <h2 className="text-md font-bold text-orange-700 font-black text-gray-800 mb-4">
+              <h2 className="text-md font-bold text-green-700 font-black text-gray-800 mb-4">
                 About Kiota Poultry
               </h2>
               <h2 className="text-5xl font-bold font-black text-gray-800 mb-4">
@@ -115,15 +120,15 @@ const Home = () => {
               </h2>
               <p className="text-md text-gray-700 leading-relaxed">
                 Kiota Poultry uses smart technology and real-time monitoring to
-                help farmers protect their birds, reduce losses, and improve
-                farm performance. Our IoT-powered system gives you full
+                help farmers protect their birds, greenuce losses, and improve
+                farm performance. Our IoT-powegreen system gives you full
                 visibility and control, turning everyday farm data into better
                 decisions and stronger growth.
               </p>
               <div>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center px-6 py-3 mt-2 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                  className="inline-flex items-center px-6 py-3 mt-2 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                 >
                   Contact Us
                   <ArrowRight className="ml-2" size={18} />
@@ -134,11 +139,11 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-red-50">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-green-50 to-emerald-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white rounded-2xl shadow-xl p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl flex items-center justify-center mb-6">
                 <Target className="text-white" size={32} />
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
@@ -146,7 +151,7 @@ const Home = () => {
               </h3>
               <p className="text-gray-700 leading-relaxed text-lg">
                 To empower poultry farmers with smart technology that improves
-                productivity, reduces losses, and simplifies farm management.
+                productivity, greenuces losses, and simplifies farm management.
               </p>
             </div>
             <div className="bg-white rounded-2xl shadow-xl p-8">
@@ -177,7 +182,7 @@ const Home = () => {
 
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-red-600 mb-6">
+              <h3 className="text-2xl font-bold text-green-600 mb-6">
                 Poultry farming faces many challenges:
               </h3>
               <div className="space-y-4">
@@ -190,7 +195,7 @@ const Home = () => {
                 ].map((challenge, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     <AlertCircle
-                      className="text-red-500 mt-1 flex-shrink-0"
+                      className="text-green-500 mt-1 flex-shrink-0"
                       size={20}
                     />
                     <p className="text-gray-700 font-medium">{challenge}</p>
@@ -199,8 +204,8 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-orange-50 to-emerald-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-orange-600 mb-6">
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-green-600 mb-6">
                 Kiota Poultry solves these problems:
               </h3>
               <p className="text-gray-700 leading-relaxed text-lg">
@@ -228,7 +233,7 @@ const Home = () => {
             </h2>
             <p className="text-white/95 max-w-2xl mx-auto text-center">
               We help poultry farmers use technology to improve productivity,
-              reduce losses, and manage farms more efficiently.
+              greenuce losses, and manage farms more efficiently.
             </p>
           </div>
 
@@ -237,9 +242,9 @@ const Home = () => {
           <div className="max-w-7xl mx-auto ">
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 ">
               {/* Service 1 */}
-              <div className="bg-orange-100 rounded-3xl rounded-br-none p-8 shadow-md border-b-4 border-orange-600 hover:shadow-xl transition duration-300">
-                <div className="w-14 h-14 bg-orange-200 rounded-full flex items-center justify-center mb-6">
-                  <Thermometer className="text-orange-600" size={26} />
+              <div className="bg-green-100 rounded-3xl rounded-br-none p-8 shadow-md border-b-4 border-green-600 hover:shadow-xl transition duration-300">
+                <div className="w-14 h-14 bg-green-200 rounded-full flex items-center justify-center mb-6">
+                  <Thermometer className="text-green-600" size={26} />
                 </div>
 
                 <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -252,15 +257,15 @@ const Home = () => {
                   environment.
                 </p>
 
-                <button className="flex items-center text-orange-700 font-semibold gap-2 hover:gap-3 transition-all">
+                <button className="flex items-center text-green-700 font-semibold gap-2 hover:gap-3 transition-all">
                   Read More ➜
                 </button>
               </div>
 
               {/* Service 2 */}
-              <div className="bg-orange-100 rounded-2xl rounded-br-none p-8 shadow-md border-b-4 border-orange-600 hover:shadow-xl transition duration-300">
-                <div className="w-14 h-14 bg-orange-200 rounded-full flex items-center justify-center mb-6">
-                  <AlertCircle className="text-orange-600" size={26} />
+              <div className="bg-green-100 rounded-2xl rounded-br-none p-8 shadow-md border-b-4 border-green-600 hover:shadow-xl transition duration-300">
+                <div className="w-14 h-14 bg-green-200 rounded-full flex items-center justify-center mb-6">
+                  <AlertCircle className="text-green-600" size={26} />
                 </div>
 
                 <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -273,15 +278,15 @@ const Home = () => {
                   environmental changes.
                 </p>
 
-                <button className="flex items-center text-orange-700 font-semibold gap-2 hover:gap-3 transition-all">
+                <button className="flex items-center text-green-700 font-semibold gap-2 hover:gap-3 transition-all">
                   Read More ➜
                 </button>
               </div>
 
               {/* Service 3 */}
-              <div className="bg-orange-100 rounded-2xl rounded-br-none p-8 shadow-md border-b-4 border-orange-600 hover:shadow-xl transition duration-300">
-                <div className="w-14 h-14 bg-orange-200 rounded-full flex items-center justify-center mb-6">
-                  <Cpu className="text-orange-600" size={26} />
+              <div className="bg-green-100 rounded-2xl rounded-br-none p-8 shadow-md border-b-4 border-green-600 hover:shadow-xl transition duration-300">
+                <div className="w-14 h-14 bg-green-200 rounded-full flex items-center justify-center mb-6">
+                  <Cpu className="text-green-600" size={26} />
                 </div>
 
                 <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -290,19 +295,19 @@ const Home = () => {
 
                 <p className="text-gray-600 mb-6">
                   Integration of smart ventilation, lighting control, and
-                  automated feeding systems to reduce manual work and improve
+                  automated feeding systems to greenuce manual work and improve
                   farm efficiency.
                 </p>
 
-                <button className="flex items-center text-orange-700 font-semibold gap-2 hover:gap-3 transition-all">
+                <button className="flex items-center text-green-700 font-semibold gap-2 hover:gap-3 transition-all">
                   Read More ➜
                 </button>
               </div>
 
               {/* Service 4 */}
-              <div className="bg-orange-100 rounded-2xl rounded-br-none p-8 shadow-md border-b-4 border-orange-600 hover:shadow-xl transition duration-300">
-                <div className="w-14 h-14 bg-orange-200 rounded-full flex items-center justify-center mb-6">
-                  <Wrench className="text-orange-600" size={26} />
+              <div className="bg-green-100 rounded-2xl rounded-br-none p-8 shadow-md border-b-4 border-green-600 hover:shadow-xl transition duration-300">
+                <div className="w-14 h-14 bg-green-200 rounded-full flex items-center justify-center mb-6">
+                  <Wrench className="text-green-600" size={26} />
                 </div>
 
                 <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -315,7 +320,7 @@ const Home = () => {
                   smoothly.
                 </p>
 
-                <button className="flex items-center text-orange-700 font-semibold gap-2 hover:gap-3 transition-all">
+                <button className="flex items-center text-green-700 font-semibold gap-2 hover:gap-3 transition-all">
                   Read More ➜
                 </button>
               </div>
@@ -329,7 +334,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className="space-y-6">
-            <p className="text-sm font-semibold text-orange-600 uppercase tracking-wide">
+            <p className="text-sm font-semibold text-green-600 uppercase tracking-wide">
               Smart Farm in Action
             </p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight">
@@ -345,12 +350,12 @@ const Home = () => {
               {[
                 "Experience in smart poultry management",
                 "Real-time monitoring that grows with your farm",
-                "Solutions tailored to your farm’s needs",
+                "Solutions tailogreen to your farm’s needs",
                 "Turning farm data into simple, clear insights",
               ].map((item, index) => (
                 <div key={index} className="flex items-start space-x-2">
                   <Check
-                    className="text-orange-600 mt-1 flex-shrink-0"
+                    className="text-green-600 mt-1 flex-shrink-0"
                     size={20}
                   />
                   <p className="text-gray-700 font-medium">{item}</p>
@@ -358,7 +363,7 @@ const Home = () => {
               ))}
             </div>
 
-            <button className="inline-flex items-center px-8 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-lg transition-all duration-200">
+            <button className="inline-flex items-center px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-lg transition-all duration-200">
               Watch Demo Video
               <Play className="ml-2" size={18} />
             </button>
@@ -377,7 +382,7 @@ const Home = () => {
               aria-label="Play video"
             >
               <span className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 flex items-center justify-center shadow-xl">
-                <Play className="text-orange-600" size={32} />
+                <Play className="text-green-600" size={32} />
               </span>
             </button>
           </div>
@@ -385,10 +390,10 @@ const Home = () => {
       </section>
 
       {/* Benefits / Why Choose Us Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-orange-50 to-orange-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-green-50 to-green-100">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <p className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/80 text-xs font-semibold uppercase tracking-[0.15em] text-orange-600 mb-4">
+            <p className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/80 text-xs font-semibold uppercase tracking-[0.15em] text-green-600 mb-4">
               Why Choose Us
             </p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-800 mb-3">
@@ -405,14 +410,14 @@ const Home = () => {
             <div className="space-y-4">
               {[
                 {
-                  title: "Reduce bird mortality",
+                  title: "greenuce bird mortality",
                   description:
                     "Keep birds in the ideal environment with smart alerts before conditions become dangerous.",
                 },
                 {
                   title: "Improve feed efficiency",
                   description:
-                    "Use data to optimize feeding schedules and reduce waste on every flock.",
+                    "Use data to optimize feeding schedules and greenuce waste on every flock.",
                 },
                 {
                   title: "Early disease risk detection",
@@ -422,10 +427,10 @@ const Home = () => {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-4 py-4 border-b border-orange-100 last:border-b-0"
+                  className="flex items-start gap-4 py-4 border-b border-green-100 last:border-b-0"
                 >
                   <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-md flex-shrink-0">
-                    <Check className="text-orange-600" size={20} />
+                    <Check className="text-green-600" size={20} />
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">{item.title}</p>
@@ -456,7 +461,7 @@ const Home = () => {
                 </div>
 
                 {/* Outer Ring */}
-                <div className="absolute inset-0 rounded-full ring-8 ring-orange-100 pointer-events-none" />
+                <div className="absolute inset-0 rounded-full ring-8 ring-green-100 pointer-events-none" />
               </div>
             </div>
 
@@ -481,10 +486,10 @@ const Home = () => {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-4 py-4 border-b border-orange-100 last:border-b-0"
+                  className="flex items-start gap-4 py-4 border-b border-green-100 last:border-b-0"
                 >
                   <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-md flex-shrink-0">
-                    <Check className="text-orange-600" size={20} />
+                    <Check className="text-green-600" size={20} />
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">{item.title}</p>
@@ -527,18 +532,19 @@ const Home = () => {
                   "We offer ongoing technical support, training, and system checks to make sure your farm continues running smoothly.",
               },
             ].map((faq, index) => {
-              const isActive = index === 1; // highlight the second item like the design
+              const isActive = activeFaq === index;
               return (
                 <div
                   key={index}
                   className={`rounded-2xl border flex flex-col overflow-hidden ${
                     isActive
-                      ? "bg-orange-50 border-orange-500 shadow-md"
+                      ? "bg-green-50 border-green-500 shadow-md"
                       : "bg-white border-gray-200 shadow-sm"
                   }`}
                 >
                   <button
                     type="button"
+                    onClick={() => toggleFaq(index)}
                     className="flex items-center justify-between w-full text-left px-6 py-4"
                   >
                     <div>
@@ -550,9 +556,9 @@ const Home = () => {
                       </p>
                     </div>
                     <span
-                      className={`w-8 h-8 flex items-center justify-center rounded-full text-lg font-bold ${
+                      className={`w-8 h-8 flex items-center justify-center rounded-full text-lg font-bold transition-all duration-200 ${
                         isActive
-                          ? "bg-orange-600 text-white"
+                          ? "bg-green-600 text-white"
                           : "bg-gray-100 text-gray-700"
                       }`}
                     >
@@ -571,7 +577,7 @@ const Home = () => {
 
           {/* Right: FAQ intro + social proof */}
           <div className="space-y-6">
-            <p className="text-sm font-semibold text-orange-600 uppercase tracking-wide">
+            <p className="text-sm font-semibold text-green-600 uppercase tracking-wide">
               Frequently Asked Questions
             </p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight">
@@ -603,7 +609,7 @@ const Home = () => {
                     alt="Poultry farm"
                     className="w-10 h-10 rounded-full border-2 border-white object-cover"
                   />
-                  <div className="w-10 h-10 rounded-full bg-orange-600 text-white text-xs font-semibold flex items-center justify-center border-2 border-white">
+                  <div className="w-10 h-10 rounded-full bg-green-600 text-white text-xs font-semibold flex items-center justify-center border-2 border-white">
                     +4586
                   </div>
                 </div>
@@ -642,7 +648,7 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 items-center gap-12">
           {/* LEFT TEXT */}
           <div className="text-white z-10 -mt-40">
-            <p className="text-sm font-semibold text-orange-200 tracking-wide mb-3">
+            <p className="text-sm font-semibold text-green-200 tracking-wide mb-3">
               Need an Expert
             </p>
 
@@ -657,7 +663,7 @@ const Home = () => {
 
             <Link
               to="/contact"
-              className="inline-block bg-orange-600 hover:bg-orange-700 px-8 py-4 rounded-lg font-semibold shadow-lg transition"
+              className="inline-block bg-green-600 hover:bg-green-700 px-8 py-4 rounded-lg font-semibold shadow-lg transition"
             >
               Book a Free Consultation
             </Link>
@@ -679,7 +685,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
             <div>
-              <p className="text-sm font-semibold text-orange-600 uppercase tracking-wide">
+              <p className="text-sm font-semibold text-green-600 uppercase tracking-wide">
                 News & Blog
               </p>
               <h2 className="text-3xl sm:text-4xl font-black text-gray-900">
@@ -728,7 +734,7 @@ const Home = () => {
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
-                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-orange-50 text-orange-700 font-semibold">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-green-50 text-green-700 font-semibold">
                       {post.tag}
                     </span>
                     <span>{post.date}</span>
@@ -740,7 +746,7 @@ const Home = () => {
                     Short, practical insights to help you protect your birds and
                     grow a more profitable farm.
                   </p>
-                  <button className="mt-4 inline-flex items-center text-sm font-semibold text-orange-700 hover:text-orange-800">
+                  <button className="mt-4 inline-flex items-center text-sm font-semibold text-green-700 hover:text-green-800">
                     Read article
                     <ArrowRight className="ml-1" size={16} />
                   </button>
