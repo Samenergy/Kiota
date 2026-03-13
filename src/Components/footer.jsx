@@ -14,11 +14,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-700 rounded-lg flex items-center justify-center shadow-lg">
-                <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C10.34 2 9 3.34 9 5c0 .74.27 1.42.71 1.95C8.88 7.55 8 8.68 8 10c0 1.66 1.34 3 3 3v9h2v-9c1.66 0 3-1.34 3-3 0-1.32-.88-2.45-2.71-3.05.44-.53.71-1.21.71-1.95 0-1.66-1.34-3-3-3zm0 2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/>
-                </svg>
-              </div>
+              <img 
+                src="/logowhite.png" 
+                alt="Kiota Poultry Logo" 
+                className="w-10 h-10 rounded-lg object-cover"
+              />
               <h4 className="font-bold text-lg">Kiota Poultry</h4>
             </div>
             <p className="text-gray-400 text-sm mb-4">

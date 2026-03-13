@@ -110,17 +110,10 @@ const Contact = () => {
                       Send us an email anytime
                     </p>
                     <a
-                      href="mailto:info@kiotapoultry.com"
+                      href="mailto:kihiupurity29@gmail.com"
                       className="text-green-600 font-semibold hover:underline"
                     >
-                      info@kiotapoultry.com
-                    </a>
-                    <br />
-                    <a
-                      href="mailto:support@kiotapoultry.com"
-                      className="text-green-600 font-semibold hover:underline"
-                    >
-                      support@kiotapoultry.com
+                      kihiupurity29@gmail.com
                     </a>
                   </div>
                 </div>
@@ -135,17 +128,10 @@ const Contact = () => {
                     </h3>
                     <p className="text-gray-700 mb-2">Mon-Sat, 8am-6pm EAT</p>
                     <a
-                      href="tel:+254700000000"
+                      href="tel:+254746416361"
                       className="text-green-600 font-semibold hover:underline"
                     >
-                      +254 700 000 000
-                    </a>
-                    <br />
-                    <a
-                      href="tel:+254711000000"
-                      className="text-green-600 font-semibold hover:underline"
-                    >
-                      +254 711 000 000 (Support)
+                      +254 746 416 361
                     </a>
                   </div>
                 </div>

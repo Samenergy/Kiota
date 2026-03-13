@@ -208,28 +208,7 @@ const About = () => {
       </section>
 
       {/* Recognition */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-green-600">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center text-white mb-12">
-            <h2 className="text-4xl font-black mb-4">Recognition & Awards</h2>
-            <p className="text-xl opacity-90">Honogreen for our impact on agriculture and innovation</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { year: '2024', award: 'Best AgriTech Startup', org: 'Kenya Innovation Week' },
-              { year: '2023', award: 'Social Impact Award', org: 'African Tech Summit' },
-              { year: '2023', award: 'Climate Innovation Prize', org: 'UN Environment Program' }
-            ].map((award, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20">
-                <div className="text-4xl font-black mb-2">{award.year}</div>
-                <h3 className="text-xl font-bold mb-2">{award.award}</h3>
-                <p className="opacity-90">{award.org}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 };
