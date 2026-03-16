@@ -94,7 +94,7 @@ const Home = () => {
                     <img
                       src="/Group 1.svg"
                       alt="Decorative background"
-                      className="w-[600px] max-w-none"
+                      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto"
                     />
                   </div>
                 </div>
@@ -369,22 +369,16 @@ const Home = () => {
             </button>
           </div>
 
-          {/* Right video thumbnail */}
-          <div className="relative rounded-3xl rounded-br-none  overflow-hidden shadow-2xl">
-            <img
-              src="/11.jpg"
-              alt="Farmer using smart poultry monitoring"
-              className="w-full h-[260px] sm:h-[320px] lg:h-[360px] object-cover"
-            />
-            <div className="absolute inset-0 bg-black/25" />
-            <button
-              className="absolute inset-0 flex items-center justify-center"
-              aria-label="Play video"
+          {/* Right: Embedded demo video */}
+          <div className="relative rounded-3xl rounded-br-none overflow-hidden shadow-2xl bg-black">
+            <video
+              className="w-full h-[220px] sm:h-[300px] lg:h-[360px] object-cover"
+              src="/video.mp4"
+              controls
+              preload="metadata"
             >
-              <span className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 flex items-center justify-center shadow-xl">
-                <Play className="text-green-600" size={32} />
-              </span>
-            </button>
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </section>
@@ -674,7 +668,7 @@ const Home = () => {
             <img
               src="/15.jpg"
               alt="Farm specialists"
-              className="w-[450px] rounded-[28px] shadow-2xl"
+              className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-md rounded-[28px] shadow-2xl h-auto"
             />
           </div>
         </div>

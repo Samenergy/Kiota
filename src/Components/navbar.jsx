@@ -130,7 +130,89 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu remains the same... */}
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-100 shadow-lg">
+          <div className="px-4 py-3 space-y-2">
+            <Link
+              to="/"
+              onClick={() => setIsMenuOpen(false)}
+              className={`block px-3 py-2 rounded-lg font-semibold text-sm ${
+                isActive("/")
+                  ? "bg-gradient-to-r from-green-500 to-green-700 text-white"
+                  : "text-gray-800 hover:bg-green-50"
+              }`}
+            >
+              Home
+            </Link>
+
+            <Link
+              to="/about"
+              onClick={() => setIsMenuOpen(false)}
+              className={`block px-3 py-2 rounded-lg font-semibold text-sm ${
+                isActive("/about")
+                  ? "bg-gradient-to-r from-green-500 to-green-700 text-white"
+                  : "text-gray-800 hover:bg-green-50"
+              }`}
+            >
+              About
+            </Link>
+
+            {/* Products accordion-style dropdown on mobile */}
+            <div className="border border-gray-100 rounded-lg overflow-hidden">
+              <button
+                type="button"
+                onClick={() => setIsAppDropdownOpen(!isAppDropdownOpen)}
+                className="w-full flex items-center justify-between px-3 py-2 text-sm font-semibold text-gray-800 bg-white"
+              >
+                <span>Products</span>
+                <ChevronDown
+                  size={16}
+                  className={`transition-transform ${
+                    isAppDropdownOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {isAppDropdownOpen && (
+                <div className="bg-gray-50">
+                  <Link
+                    to="/app"
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      setIsAppDropdownOpen(false);
+                    }}
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50"
+                  >
+                    Farm App
+                  </Link>
+                  <Link
+                    to="/smart-brooder"
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      setIsAppDropdownOpen(false);
+                    }}
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50"
+                  >
+                    Smart Brooder
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            <Link
+              to="/contact"
+              onClick={() => setIsMenuOpen(false)}
+              className={`block px-3 py-2 rounded-lg font-semibold text-sm ${
+                isActive("/contact")
+                  ? "bg-gradient-to-r from-green-500 to-green-700 text-white"
+                  : "text-gray-800 hover:bg-green-50"
+              }`}
+            >
+              Contact
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
