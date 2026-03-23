@@ -31,7 +31,12 @@ const Footer = () => {
               <a href="#" className="w-9 h-9 bg-gray-800 hover:bg-green-600 rounded-lg flex items-center justify-center transition-colors">
                 <Twitter size={18} />
               </a>
-              <a href="#" className="w-9 h-9 bg-gray-800 hover:bg-green-600 rounded-lg flex items-center justify-center transition-colors">
+              <a
+                href="https://www.linkedin.com/company/kiota-poultry-ltd/posts/?feedView=all"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 bg-gray-800 hover:bg-green-600 rounded-lg flex items-center justify-center transition-colors"
+              >
                 <Linkedin size={18} />
               </a>
               <a href="#" className="w-9 h-9 bg-gray-800 hover:bg-green-600 rounded-lg flex items-center justify-center transition-colors">
@@ -104,7 +109,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; 2026 Kiota Poultry. All rights reserved. Built with ❤️ for farmers.</p>
+          <p>&copy; 2026 Kiota Poultry. All rights reserved.</p>
         </div>
       </div>
     </footer>
