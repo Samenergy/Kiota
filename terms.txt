@@ -1,0 +1,90 @@
+
+### 1. Introduction
+Welcome to PoultrySlight ("we," "our," or "us"). These Terms and Conditions ("Terms") govern your use of the PoultrySlight mobile application ("App"), which provides AI-powered egg production prediction, environmental monitoring, and farm management services for poultry farmers.
+
+### 2. Acceptance of Terms
+By downloading, installing, accessing, or using the PoultrySlight App, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use the App. We reserve the right to modify these Terms at any time, and such modifications shall be effective immediately upon posting.
+
+### 3. Description of Services
+PoultrySlight provides the following services:
+- **AI-Powered Predictions**: Egg production forecasting using machine learning models based on environmental data (temperature, humidity, ammonia, light intensity, noise levels, and feeding amounts).
+- **Environmental Monitoring**: Real-time and historical tracking of environmental conditions in poultry facilities.
+- **Audio Analysis**: Noise level recording and analysis for stress detection in poultry.
+- **Data Storage**: Cloud synchronization of your farm data via Supabase, with offline functionality using local storage.
+- **Profit Analytics**: Financial tracking and profit calculations based on production predictions.
+
+### 4. User Accounts and Registration
+To use certain features of the App, you must create an account. You agree to:
+- Provide accurate, current, and complete information during registration.
+- Maintain and update your account information to keep it accurate.
+- Keep your account credentials secure and confidential.
+- Notify us immediately of any unauthorized use of your account.
+- Accept responsibility for all activities that occur under your account.
+
+### 7. User Responsibilities
+You are responsible for:
+- **Providing Accurate Data**: Ensuring all environmental and farm data entered into the App is accurate and up-to-date.
+- **Maintaining Equipment**: Properly maintaining and calibrating any sensors or equipment used to collect data for the App.
+- **Animal Welfare**: Ensuring the health and welfare of your poultry in accordance with applicable animal welfare laws and regulations.
+- **Compliance**: Complying with all applicable local, state, and federal laws and regulations related to poultry farming and data protection.
+- **Appropriate Use**: Using the App only for lawful purposes and in accordance with these Terms.
+
+### 8. Intellectual Property Rights
+- **App Ownership**: The App, including all content, features, functionality, machine learning models, and technology, is owned by PoultrySlight or its licensors and is protected by copyright, trademark, and other intellectual property laws.
+- **Limited License**: We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for your personal or commercial farming purposes.
+- **Restrictions**: You may not:
+  - Copy, modify, or distribute the App
+  - Reverse engineer or attempt to extract the source code
+  - Remove any copyright or proprietary notices
+  - Use the App for any illegal or unauthorized purpose
+- **User Data**: You retain ownership of data you input into the App, and grant us a license to use such data to provide and improve our services.
+
+### 9. Service Availability and Modifications
+- **Availability**: We strive to provide reliable service but do not guarantee uninterrupted, secure, or error-free operation. The App may be unavailable due to maintenance, updates, or technical issues.
+- **Offline Functionality**: The App includes offline capabilities using TensorFlow Lite for predictions, but cloud synchronization and real-time features require internet connectivity.
+- **Modifications**: We reserve the right to modify, suspend, or discontinue any part of the App at any time with or without notice.
+- **Updates**: We may release updates to improve functionality, security, or compliance. Updates may require your acceptance of modified Terms.
+
+### 10. Third-Party Services
+The App integrates with third-party services:
+- **Supabase**: Used for authentication, cloud storage, and real-time data synchronization.
+- **Google Sign-In**: Optional authentication method subject to Google's Terms of Service.
+- **TensorFlow Lite**: Machine learning framework used for offline predictions.
+
+Your use of third-party services is subject to their respective terms and conditions and privacy policies. We are not responsible for the practices or content of third-party services.
+
+### 11. Termination
+- **Your Rights**: You may stop using the App and delete your account at any time.
+- **Our Rights**: We may terminate or suspend your access if you violate these Terms. Upon termination, your right to use the App ceases immediately. We may delete your account and associated data, subject to our data retention policies and applicable law.
+
+### 12. Indemnification
+You agree to indemnify, defend, and hold harmless PoultrySlight, its affiliates, officers, directors, employees, and agents from and against any and all claims, damages, obligations, losses, liabilities, costs, or expenses (including attorney's fees) arising from:
+- Your use of the App
+- Your violation of these Terms
+- Your violation of any third-party rights
+- Farm management decisions made based on App predictions or recommendations
+
+### 13. Dispute Resolution
+- **Governing Law**: These Terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law provisions.
+- **Dispute Resolution**: Any disputes arising out of or relating to these Terms or the App shall be resolved through binding arbitration in accordance with the rules of [Arbitration Organization], except where prohibited by law.
+- **Class Action Waiver**: You agree that disputes will be resolved individually and waive any right to participate in class actions or consolidated proceedings.
+
+### 14. Acknowledgment
+BY USING POULTRYSIGHT, YOU ACKNOWLEDGE THAT:
+- You have read and understood these Terms and Conditions
+- You agree to be bound by these Terms
+- You understand that egg production predictions are estimates and not guarantees
+- You will use professional judgment in farm management decisions
+- You will use the App responsibly and in accordance with all applicable laws
+
+If you do not agree with any part of these Terms, please discontinue use of the App immediately.
+
+### Prediction Accuracy and Disclaimers (appears in multiple sections)
+Predictions generated using PoultrySlight are generated using machine learning models trained on historical data. These predictions are estimates and should not be considered as guaranteed outcomes.
+- **Prediction Accuracy**: While our models achieve high accuracy (R² > 0.94), actual results may vary due to numerous factors including but not limited to: disease outbreaks, feed quality variations, genetic factors, seasonal changes, and unforeseen environmental events.
+- **No Guarantees**: We make no warranties or guarantees regarding the accuracy, reliability, or suitability of any predictions for your specific farming operations.
+- **Professional Judgment**: Always use your professional judgment and consult with veterinary or agricultural experts before making critical farm management decisions based on our predictions.
+- **Continuous Monitoring**: Regularly validate predictions against actual production results and adjust your farm management practices accordingly.
+
+### Questions about our Terms?
+Contact us at: kihiupurity29@gmail.com

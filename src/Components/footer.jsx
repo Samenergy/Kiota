@@ -45,9 +45,8 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li><Link to="/" className="text-gray-400 hover:text-green-400 transition-colors">Home</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-green-400 transition-colors">About Us</Link></li>
-              <li><Link to="/products" className="text-gray-400 hover:text-green-400 transition-colors">Products</Link></li>
-              <li><Link to="/app" className="text-gray-400 hover:text-green-400 transition-colors">Download App</Link></li>
-              <li><Link to="/dashboard" className="text-gray-400 hover:text-green-400 transition-colors">Dashboard Demo</Link></li>
+              <li><Link to="/app" className="text-gray-400 hover:text-green-400 transition-colors">Farm App</Link></li>
+              <li><Link to="/smart-brooder" className="text-gray-400 hover:text-green-400 transition-colors">Smart Brooder</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-green-400 transition-colors">Contact Us</Link></li>
             </ul>
           </div>
@@ -59,8 +58,15 @@ const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Documentation</a></li>
               <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">API Reference</a></li>
               <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Community Forum</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">FAQs</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Privacy Policy</a></li>
+              <li><a href="/" className="text-gray-400 hover:text-green-400 transition-colors">FAQs</a></li>
+              <li>
+                <Link
+                  to="/terms-of-service"
+                  className="text-gray-400 hover:text-green-400 transition-colors"
+                >
+                  Terms of Service
+                </Link>
+              </li>
             </ul>
           </div>
           
@@ -69,15 +75,15 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-2">
                 <Mail className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
-                <span className="text-gray-400">info@kiotapoultry.com</span>
+                <span className="text-gray-400">kihiupurity29@gmail.com</span>
               </li>
               <li className="flex items-start space-x-2">
                 <Phone className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
-                <span className="text-gray-400">+254 700 000 000</span>
+                <span className="text-gray-400">+254 74646361</span>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
-                <span className="text-gray-400">Nairobi, Kenya</span>
+                <span className="text-gray-400">Elysee Plaza, Kilimani Road</span>
               </li>
             </ul>
             

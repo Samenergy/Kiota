@@ -114,7 +114,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-                Kiota Poultry was founded in 2022 by a team of agricultural economists, IoT engineers, and passionate farmers who saw the challenges facing small-scale poultry producers firsthand. We witnessed how climate change, disease outbreaks, and lack of real-time data were affecting farm productivity and animal welfare.
+                Kiota Poultry was founded in 2025 by a team of agricultural economists, IoT engineers, and passionate farmers who saw the challenges facing small-scale poultry producers firsthand. We witnessed how climate change, disease outbreaks, and lack of real-time data were affecting farm productivity and animal welfare.
               </p>
               <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
                 We knew technology could help, but existing solutions were too expensive and complex for small-scale farmers. So we set out to build something different: affordable IoT sensors, intuitive mobile apps, and AI analytics specifically designed for the realities of Kenyan poultry farming.
@@ -127,17 +127,17 @@ const About = () => {
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-all">
                 <TrendingUp className="text-green-600 mx-auto mb-4" size={40} />
-                <div className="text-3xl font-black text-gray-800 mb-2">500+</div>
+                <div className="text-3xl font-black text-gray-800 mb-2">2</div>
                 <div className="text-gray-600 font-semibold">Active Farms</div>
               </div>
               <div className="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-all">
                 <Award className="text-green-600 mx-auto mb-4" size={40} />
-                <div className="text-3xl font-black text-gray-800 mb-2">10M+</div>
+                <div className="text-3xl font-black text-gray-800 mb-2">1M+</div>
                 <div className="text-gray-600 font-semibold">Birds Monitogreen</div>
               </div>
               <div className="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-all">
                 <Globe className="text-blue-600 mx-auto mb-4" size={40} />
-                <div className="text-3xl font-black text-gray-800 mb-2">12</div>
+                <div className="text-3xl font-black text-gray-800 mb-2">2</div>
                 <div className="text-gray-600 font-semibold">Counties</div>
               </div>
               <div className="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-all">

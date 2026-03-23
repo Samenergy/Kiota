@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 
@@ -6,6 +6,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAppDropdownOpen, setIsAppDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const closeDropdownTimerRef = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -15,6 +16,35 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    // Ensure any pending dropdown-close timers are cleared on unmount.
+    return () => {
+      if (closeDropdownTimerRef.current) {
+        clearTimeout(closeDropdownTimerRef.current);
+      }
+    };
+  }, []);
+
+  const openAppDropdown = () => {
+    if (closeDropdownTimerRef.current) {
+      clearTimeout(closeDropdownTimerRef.current);
+      closeDropdownTimerRef.current = null;
+    }
+    setIsAppDropdownOpen(true);
+  };
+
+  const scheduleCloseAppDropdown = () => {
+    if (closeDropdownTimerRef.current) {
+      clearTimeout(closeDropdownTimerRef.current);
+    }
+
+    // Slight delay so moving from the trigger to the dropdown doesn't immediately close it.
+    closeDropdownTimerRef.current = setTimeout(() => {
+      setIsAppDropdownOpen(false);
+      closeDropdownTimerRef.current = null;
+    }, 500);
+  };
 
   const isActive = (path) => location.pathname === path;
 
@@ -71,8 +101,8 @@ const Navbar = () => {
             {/* Products Dropdown */}
             <div
               className="relative"
-              onMouseEnter={() => setIsAppDropdownOpen(true)}
-              onMouseLeave={() => setIsAppDropdownOpen(false)}
+              onMouseEnter={openAppDropdown}
+              onMouseLeave={scheduleCloseAppDropdown}
             >
               <button
                 className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 flex items-center space-x-1 ${
@@ -89,7 +119,11 @@ const Navbar = () => {
               </button>
 
               {isAppDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden">
+                <div
+                  className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden"
+                  onMouseEnter={openAppDropdown}
+                  onMouseLeave={scheduleCloseAppDropdown}
+                >
                   <Link
                     to="/app"
                     className="block px-6 py-4 text-gray-700 hover:bg-green-50 transition-colors border-b border-gray-100"

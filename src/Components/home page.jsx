@@ -28,8 +28,8 @@ const Home = () => {
     <div className="pt-20">
       {/* Hero Section */}
       <section
-        className="py-20 px-4 sm:px-6 lg:px-8 bg-cover bg-right bg-no-repeat relative"
-        style={{ backgroundImage: "url('/we.png')", backgroundSize: '35% auto' }}
+        className="py-20 px-4 sm:px-6 lg:px-8 bg-right bg-no-repeat bg-[length:85%_auto] sm:bg-[length:55%_auto] lg:bg-[length:35%_auto] relative"
+        style={{ backgroundImage: "url('/we.png')" }}
       >
         <div className="absolute inset-0"></div>
         <div className="max-w-7xl mx-auto relative z-10">
@@ -220,15 +220,15 @@ const Home = () => {
       <section className="relative bg-white">
         {/* Top half: background image only */}
         <div
-          className="absolute top-0 left-0 right-0 h-1/2 min-h-[500px] bg-cover  bg-center bg-no-repeat"
+          className="absolute top-0 left-0 right-0 h-[55vh] min-h-[380px] sm:min-h-[500px] bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/11.jpg')" }}
         />
-        <div className="absolute top-0 left-0 right-0 h-1/2 min-h-[500px] bg-black/50" />
+        <div className="absolute top-0 left-0 right-0 h-[55vh] min-h-[380px] sm:min-h-[500px] bg-black/50" />
 
         <div className="relative z-10">
           {/* Section Header - sits in the image half */}
-          <div className="min-h-[50vh] min-h-[280px] flex flex-col items-center justify-center px-6 pt-16 pb-12">
-            <h2 className="text-4xl font-bold text-white mb-4 text-center">
+          <div className="min-h-[320px] sm:min-h-[45vh] flex flex-col items-center justify-center px-4 sm:px-6 pt-10 pb-10 sm:pt-16 sm:pb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 text-center">
               Our Smart Farm Solutions
             </h2>
             <p className="text-white/95 max-w-2xl mx-auto text-center">
@@ -441,9 +441,9 @@ const Home = () => {
               <div className="relative">
                 {/* Bigger Circle */}
                 <div
-                  className="w-[350px] h-[350px] 
-                    sm:w-[450px] sm:h-[450px] 
-                    lg:w-[350px] lg:h-[350px] 
+                  className="w-[280px] h-[280px]
+                    sm:w-[360px] sm:h-[360px]
+                    lg:w-[350px] lg:h-[350px]
                     rounded-full overflow-hidden 
                     shadow-2xl border-4 border-white"
                 >
@@ -621,7 +621,7 @@ const Home = () => {
         </div>
       </section>
       {/* Final CTA Section */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-visible sm:overflow-hidden">
         {/* BACKGROUND LAYERS */}
         <div className="absolute inset-0 flex flex-col">
           {/* TOP 75% IMAGE */}
@@ -639,14 +639,14 @@ const Home = () => {
         </div>
 
         {/* CONTENT */}
-        <div className="relative max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 items-center gap-12">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 grid lg:grid-cols-2 items-center gap-12">
           {/* LEFT TEXT */}
-          <div className="text-white z-10 -mt-40">
+          <div className="text-white z-10 -mt-24 sm:-mt-40">
             <p className="text-sm font-semibold text-green-200 tracking-wide mb-3">
               Need an Expert
             </p>
 
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
               Ready to Upgrade Your Poultry Farm?
             </h2>
 

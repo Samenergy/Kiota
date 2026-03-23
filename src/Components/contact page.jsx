@@ -128,10 +128,10 @@ const Contact = () => {
                     </h3>
                     <p className="text-gray-700 mb-2">Mon-Sat, 8am-6pm EAT</p>
                     <a
-                      href="tel:+254746416361"
+                      href="tel:+25474646361"
                       className="text-green-600 font-semibold hover:underline"
                     >
-                      +254 746 416 361
+                      +254 74646361
                     </a>
                   </div>
                 </div>
@@ -145,11 +145,7 @@ const Contact = () => {
                       Visit Our Office
                     </h3>
                     <p className="text-gray-700 mb-2">
-                      Kiota Poultry Innovation Hub
-                      <br />
-                      Westlands, Nairobi
-                      <br />
-                      Kenya
+                      Elysee Plaza, Kilimani Road
                     </p>
                     <a
                       href="#"
