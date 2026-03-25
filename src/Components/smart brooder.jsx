@@ -1,298 +1,244 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { 
-  Thermometer, 
-  Wifi, 
-  Battery, 
-  Shield, 
-  Smartphone, 
-  AlertTriangle, 
-  CheckCircle, 
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Thermometer,
+  Wifi,
+  Shield,
+  Smartphone,
+  AlertTriangle,
+  CheckCircle,
   Zap,
   Cpu,
   Activity,
-  Sun,
   Droplets,
-  Wind
-} from 'lucide-react';
+  Wind,
+  Scale,
+} from "lucide-react";
 
 const SmartBrooder = () => {
   const features = [
     {
+      icon: Wind,
+      title: "Ammonia Monitoring",
+      description:
+        "MQ-132 gas sensor detects harmful NH3 levels to prevent respiratory issues in chicks.",
+    },
+    {
+      icon: Scale,
+      title: "Precision Weighing",
+      description:
+        "Integrated HX711 bridge interface for real-time tracking of bird growth and feed consumption.",
+    },
+    {
       icon: Thermometer,
-      title: 'Temperature Control',
-      description: 'Maintains optimal brooding temperature with precision heating and cooling systems'
+      title: "Dual-Zone Climate",
+      description:
+        "Redundant DHT22 sensors provide highly accurate temperature and humidity averaging.",
     },
     {
       icon: Wifi,
-      title: 'Real-time Monitoring',
-      description: 'Live data tracking and alerts sent directly to your mobile device'
-    },
-    {
-      icon: Battery,
-      title: 'Backup Power',
-      description: 'Uninterrupted operation with solar battery backup during power outages'
+      title: "IoT Connectivity",
+      description:
+        "ESP32-powered system with built-in Wi-Fi and Bluetooth for seamless cloud data sync.",
     },
     {
       icon: Shield,
-      title: 'Disease Prevention',
-      description: 'Early warning system for environmental conditions that promote disease'
-    },
-    {
-      icon: Smartphone,
-      title: 'Mobile Control',
-      description: 'Adjust settings and monitor your brooder from anywhere using our app'
+      title: "IP-Rated Durability",
+      description:
+        "Components are housed in a dust-proof, transparent enclosure designed for farm conditions.",
     },
     {
       icon: AlertTriangle,
-      title: 'Smart Alerts',
-      description: 'Instant notifications for temperature fluctuations, power issues, and more'
-    }
+      title: "Instant Alerts",
+      description:
+        "Get push notifications the moment environmental conditions drift outside safe parameters.",
+    },
   ];
 
   const specs = [
-    { label: 'Temperature Range', value: '20°C - 40°C ±0.5°C' },
-    { label: 'Capacity', value: 'Up to 500 chicks per unit' },
-    { label: 'Power Consumption', value: '150W (heating), 20W (monitoring)' },
-    { label: 'Battery Life', value: '48 hours backup' },
-    { label: 'Connectivity', value: 'WiFi, 4G, Bluetooth' },
-    { label: 'Warranty', value: '2 years comprehensive' }
+    { label: "Microcontroller", value: "ESP32 Dual-Core (Wi-Fi/BLE)" },
+    { label: "Air Quality Sensor", value: "MQ-132 (Ammonia/NH3)" },
+    { label: "Climate Sensors", value: "2x DHT22 (Temp & Humidity)" },
+    { label: "Weight Interface", value: "HX711 24-Bit ADC" },
+    { label: "Data Protocol", value: "MQTT / HTTP REST API" },
+    { label: "Power Input", value: "5V USB / Battery Backup Ready" },
   ];
 
   const benefits = [
     {
-      title: '95% Chick Survival',
-      description: 'Maintain perfect conditions for maximum chick survival rates'
+      title: "Data-Driven Decisions",
+      description:
+        "Understand exactly how environmental quality impacts your feed conversion ratio.",
     },
     {
-      title: 'Reduce Labor Costs',
-      description: 'Automated monitoring eliminates need for constant manual checks'
+      title: "Reduced Mortality",
+      description:
+        "Early detection of high ammonia or temperature spikes saves lives.",
     },
     {
-      title: 'Prevent Disease Outbreaks',
-      description: 'Early detection of environmental issues that lead to diseases'
+      title: "Remote Oversight",
+      description:
+        "Manage multiple brooding units across different locations from one dashboard.",
     },
     {
-      title: 'Energy Efficient',
-      description: 'Smart heating reduces power consumption by up to 40%'
-    }
+      title: "Transparent Design",
+      description:
+        "Visual status checks via a clear enclosure and integrated OLED display.",
+    },
   ];
 
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-green-700">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-700 to-green-900">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-white space-y-6">
               <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
-                <Cpu size={20} />
-                <span className="font-semibold">Smart Hardware</span>
+                <Cpu size={20} className="text-green-300" />
+                <span className="font-semibold uppercase tracking-wider text-sm">
+                  Industrial IoT Hardware
+                </span>
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
-                Smart Brooder
+              <h1 className="text-4xl sm:text-5xl lg:text-5xl font-black leading-tight">
+                Precision Monitoring
                 <br />
-                <span className="text-2xl sm:text-3xl md:text-4xl">Intelligent Chick Management</span>
+                <span className="text-green-400">For Smarter Poultry</span>
               </h1>
-              <p className="text-lg sm:text-xl opacity-90 leading-relaxed">
-                Revolutionize your poultry brooding with our IoT-powered smart brooder system. 
-                Monitor temperature, humidity, and chick health in real-time from your smartphone.
+              <p className="text-lg sm:text-xl opacity-90 leading-relaxed max-w-xl">
+                The Kiota IoT Node tracks Ammonia, Temperature, and Weight with
+                surgical precision, ensuring your poultry environment is always
+                optimized for growth.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-green-700 rounded-xl font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-green-500 text-white rounded-xl font-bold text-lg shadow-xl hover:bg-green-400 transition-all duration-300"
                 >
-                  Get Quote
-                  <Zap className="ml-2" size={20} />
-                </Link>
-                <Link
-                  to="/app"
-                  className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white/20 backdrop-blur-sm text-white rounded-xl font-bold text-base sm:text-lg border-2 border-white/30 hover:bg-white/30 transition-all duration-300"
-                >
-                  View App
-                  <Smartphone className="ml-2" size={20} />
+                  Request the Hardware
                 </Link>
               </div>
             </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-white/10 rounded-3xl blur-3xl"></div>
-              <div className="relative bg-white/10 backdrop-blur-sm rounded-3xl p-8 border-2 border-white/20">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-white/20 rounded-xl p-4 text-center">
-                    <Thermometer className="text-white mx-auto mb-2" size={32} />
-                    <div className="text-white font-semibold">Temp Control</div>
-                  </div>
-                  <div className="bg-white/20 rounded-xl p-4 text-center">
-                    <Wifi className="text-white mx-auto mb-2" size={32} />
-                    <div className="text-white font-semibold">IoT Ready</div>
-                  </div>
-                  <div className="bg-white/20 rounded-xl p-4 text-center">
-                    <Battery className="text-white mx-auto mb-2" size={32} />
-                    <div className="text-white font-semibold">Solar Power</div>
-                  </div>
-                  <div className="bg-white/20 rounded-xl p-4 text-center">
-                    <Smartphone className="text-white mx-auto mb-2" size={32} />
-                    <div className="text-white font-semibold">Mobile App</div>
-                  </div>
-                </div>
-              </div>
+            {/* Sensor Image Container */}
+            <div className="">
+              <img
+                src="sensor.png"
+                alt="Kiota Smart Sensor Hardware"
+                className="w-[1400px] max-w-none absolute -right-40 top-0"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Key Features */}
+      {/* Sensor Grid Component Visualization */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-4">
-              Advanced <span className="bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent">Features</span>
+            <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+              Inside the <span className="text-green-600">IoT Node</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Cutting-edge technology designed specifically for modern poultry farming
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-medium">
+              A high-performance sensor array built on the ESP32 platform.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-gradient-to-br from-green-50 to-green-50 rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all transform hover:-translate-y-2">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6">
-                  <feature.icon className="text-white" size={32} />
+              <div
+                key={index}
+                className="group bg-gray-50 rounded-2xl p-8 hover:bg-white border border-transparent hover:border-green-100 shadow-sm hover:shadow-xl transition-all duration-300"
+              >
+                <div className="w-14 h-14 bg-green-600 rounded-lg flex items-center justify-center mb-6 group-hover:rotate-3 transition-transform">
+                  <feature.icon className="text-white" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">{feature.title}</h3>
-                <p className="text-gray-700 leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Technical Specifications */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      {/* Detailed Technical Specs Table */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-4">
-              Technical <span className="bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent">Specifications</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Built with precision engineering for reliable performance
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {specs.map((spec, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-600">
-                <div className="text-sm text-gray-500 mb-1">{spec.label}</div>
-                <div className="text-xl font-bold text-gray-800">{spec.value}</div>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-black mb-8">
+                Hardware Architecture
+              </h2>
+              <div className="space-y-4">
+                {specs.map((spec, index) => (
+                  <div
+                    key={index}
+                    className="flex justify-between items-center py-4 border-b border-white/10"
+                  >
+                    <span className="text-gray-400 font-medium">
+                      {spec.label}
+                    </span>
+                    <span className="text-green-400 font-bold">
+                      {spec.value}
+                    </span>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+            <div className="bg-white/5 p-8 rounded-3xl border border-white/10">
+              <div className="flex items-center space-x-4 mb-6">
+                <Activity className="text-green-500" />
+                <h3 className="text-xl font-bold">Real-time Telemetry</h3>
+              </div>
+              <p className="text-gray-400 mb-6">
+                Our system samples data every 5 seconds, performing local
+                filtering before broadcasting updates to the dashboard via MQTT
+                protocol.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-white/10 rounded-xl p-4">
+                  <div className="text-xs text-gray-400 uppercase mb-1">
+                    Latency
+                  </div>
+                  <div className="text-xl font-bold">&lt; 200ms</div>
+                </div>
+                <div className="bg-white/10 rounded-xl p-4">
+                  <div className="text-xs text-gray-400 uppercase mb-1">
+                    Uptime
+                  </div>
+                  <div className="text-xl font-bold">99.9%</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Benefits */}
+      {/* Visual Benefits Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-4">
-              Why Choose <span className="bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent">Smart Brooder?</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Transform your brooding operations with measurable benefits
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                    <CheckCircle className="text-green-600" size={24} />
-                  </div>
+              <div key={index} className="text-center">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="text-green-600" size={24} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{benefit.title}</h3>
-                  <p className="text-gray-700 leading-relaxed">{benefit.description}</p>
-                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  {benefit.title}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {benefit.description}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Environmental Monitoring */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-green-50 to-green-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-4">
-              Environmental <span className="bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent">Monitoring</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive sensor network for optimal chick conditions
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-4">
-                <Thermometer className="text-green-600" size={40} />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Temperature</h3>
-              <p className="text-gray-600">Precise control within ±0.5°C</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-4">
-                <Droplets className="text-blue-600" size={40} />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Humidity</h3>
-              <p className="text-gray-600">Optimal moisture levels maintained</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-4">
-                <Wind className="text-cyan-600" size={40} />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Air Quality</h3>
-              <p className="text-gray-600">CO2 and ammonia monitoring</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-4">
-                <Activity className="text-purple-600" size={40} />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Activity</h3>
-              <p className="text-gray-600">Chick behavior analysis</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-green-700">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-black mb-6">
-            Ready to Transform Your Brooding?
-          </h2>
-          <p className="text-xl opacity-90 mb-8">
-            Join hundreds of farmers who have improved their chick survival rates with Smart Brooder
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center px-8 py-4 bg-white text-green-700 rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
-            >
-              Request Demo
-              <Activity className="ml-2" size={20} />
-            </Link>
-            <Link
-              to="/app"
-              className="inline-flex items-center px-8 py-4 bg-white/20 backdrop-blur-sm text-white rounded-xl font-bold text-lg border-2 border-white/30 hover:bg-white/30 transition-all duration-300"
-            >
-              Download App
-              <Smartphone className="ml-2" size={20} />
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Final CTA */}
     </div>
   );
 };
