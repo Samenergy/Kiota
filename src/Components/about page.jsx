@@ -187,7 +187,7 @@ const About = () => {
               <div className="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-all">
                 <Globe className="text-green-600 mx-auto mb-4" size={40} />
                 <div className="text-3xl font-black text-gray-800 mb-2">2</div>
-                <div className="text-gray-600 font-semibold">Counties</div>
+                <div className="text-gray-600 font-semibold">Countries</div>
               </div>
               <div className="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-all">
                 <Heart className="text-green-600 mx-auto mb-4" size={40} />
@@ -211,7 +211,7 @@ const About = () => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="chicks.mp4" type="video/mp4" />
+          <source src="chicks.mp4c" type="video/mp4" />
         </video>
 
         {/* Dark Overlay (important for readability) */}
