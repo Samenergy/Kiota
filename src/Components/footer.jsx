@@ -34,12 +34,19 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/company/kiota-poultry-ltd/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label="Kiota Poultry on LinkedIn"
                 className="w-9 h-9 bg-gray-800 hover:bg-green-600 rounded-lg flex items-center justify-center transition-colors"
               >
                 <Linkedin size={18} />
               </a>
-              <a href="#" className="w-9 h-9 bg-gray-800 hover:bg-green-600 rounded-lg flex items-center justify-center transition-colors">
+              <a
+                href="https://www.instagram.com/kiotapoultry/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Kiota Poultry on Instagram"
+                className="w-9 h-9 bg-gray-800 hover:bg-green-600 rounded-lg flex items-center justify-center transition-colors"
+              >
                 <Instagram size={18} />
               </a>
             </div>
