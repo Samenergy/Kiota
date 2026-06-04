@@ -206,7 +206,7 @@ const Contact = () => {
                     </svg>
                   </button>
                   <a
-                    href="https://www.linkedin.com/company/kiota-poultry-ltd/posts/?feedView=all"
+                    href="https://www.linkedin.com/company/kiota-poultry-ltd/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-white/20 hover:bg-white/30 rounded-lg flex items-center justify-center transition-all"

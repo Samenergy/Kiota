@@ -32,7 +32,7 @@ const Footer = () => {
                 <Twitter size={18} />
               </a>
               <a
-                href="https://www.linkedin.com/company/kiota-poultry-ltd/posts/?feedView=all"
+                href="https://www.linkedin.com/company/kiota-poultry-ltd/"
                 target="_blank"
                 rel="noreferrer"
                 className="w-9 h-9 bg-gray-800 hover:bg-green-600 rounded-lg flex items-center justify-center transition-colors"
