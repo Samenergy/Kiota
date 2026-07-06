@@ -211,7 +211,7 @@ const About = () => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="chicks.mp4c" type="video/mp4" />
+          <source src="chicks.mp4" type="video/mp4" />
         </video>
 
         {/* Dark Overlay (important for readability) */}
