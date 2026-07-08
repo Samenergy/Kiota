@@ -35,18 +35,6 @@ const About = () => {
       image: "/IMG_5317.JPG",
       bio: "Technology expert with extensive experience in IoT systems and software architecture. Samuel leads the technical vision at Kiota Poultry, developing innovative smart farming solutions that bridge the gap between traditional agriculture and cutting-edge technology.",
     },
-    {
-      name: "Team Member 3",
-      role: "Head of Operations",
-      image: "/team/member3.jpg", // Replace with your team photo
-      bio: "Add your team member bio here",
-    },
-    {
-      name: "Team Member 4",
-      role: "Head of Product",
-      image: "/team/member4.jpg", // Replace with your team photo
-      bio: "Add your team member bio here",
-    },
   ];
 
   const values = [
