@@ -70,7 +70,7 @@ const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Documentation</a></li>
               <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">API Reference</a></li>
               <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Community Forum</a></li>
-              <li><a href="/" className="text-gray-400 hover:text-green-400 transition-colors">FAQs</a></li>
+              <li><a href="/#faq" className="text-gray-400 hover:text-green-400 transition-colors">FAQs</a></li>
               <li>
                 <Link
                   to="/terms-of-service"
@@ -87,11 +87,11 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-2">
                 <Mail className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
-                <span className="text-gray-400">kihiupurity29@gmail.com</span>
+                <span className="text-gray-400">info@kiotapoultry.org</span>
               </li>
               <li className="flex items-start space-x-2">
                 <Phone className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
-                <span className="text-gray-400">+254 74646361</span>
+                <span className="text-gray-400">+254 746416361</span>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin className="text-green-400 flex-shrink-0 mt-0.5" size={16} />

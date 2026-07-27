@@ -53,62 +53,105 @@ const Home = () => {
       sections.forEach(section => observer.unobserve(section));
     };
   }, []);
+
+  // Scroll to a section if the URL contains a hash (e.g. coming from Footer's FAQ link)
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.replace('#', '');
+      const el = document.getElementById(id);
+      if (el) {
+        // Small delay ensures the page has rendered before scrolling
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    }
+  }, []);
+
   return (
     <div className="pt-20">
-      {/* Hero Section */}
-      <section
-        className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-right bg-no-repeat bg-[length:100%_auto] sm:bg-[length:70%_auto] md:bg-[length:55%_auto] lg:bg-[length:35%_auto] relative"
-        style={{ backgroundImage: "url('/we.png')" }}
-      >
-        <div className="absolute inset-0"></div>
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="space-y-6 sm:space-y-8 animate-fade-in-up">
-              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black leading-tight">
-                <span className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 bg-clip-text text-transparent">
-                  Raise Smart.
-                  <br />
-                  Grow Strong.
-                </span>
-                <br />
-                <span className="text-black text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                  Transform Your Farm Today
-                </span>
-              </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-black leading-relaxed font-medium">
-                Kiota Poultry transforms your poultry farm with intelligent
-                monitoring, real-time alerts, and smart automation that keeps
-                your birds healthy and your business profitable.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center px-5 sm:px-6 md:px-8 py-3 sm:py-4 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-xl font-bold text-sm sm:text-base md:text-lg shadow-xl hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-all duration-300"
-                >
-                  <span>Get a Demo</span>
-                  <ArrowRight size={18} sm:size={20} />
-                </Link>
-                <Link
-                  to="/contact"
-                  className="px-5 sm:px-6 md:px-8 py-3 sm:py-4 bg-white text-green-600 rounded-xl font-bold text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1 transition-all duration-300 border-2 border-green-200"
-                >
-                  Talk to an Expert
-                </Link>
-              </div>
-              <div className="pt-2 sm:pt-4">
-                <p className="text-xs sm:text-sm text-black italic">
-                  Helping poultry farms move from guesswork to data-driven
-                  decisions.
-                </p>
-              </div>
-            </div>
+{/* Hero Section */}
+<section className="relative overflow-hidden md:py-20 md:bg-[url('/we.png')] md:bg-right md:bg-no-repeat md:bg-[length:55%_auto] lg:bg-[length:35%_auto]">
 
-            <div className="relative hidden md:block">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-400 to-green-500 rounded-3xl blur-3xl opacity-20 animate-pulse"></div>
-            </div>
-          </div>
+  {/* Mobile-only hero banner: rounded, bordered image + headline overlay */}
+  <div className="block md:hidden relative mx-3 mt-3 rounded-3xl overflow-hidden shadow-xl">
+    <img
+      src="/we.png"
+      alt="Kiota Poultry chick"
+      className="w-full h-[50vh] min-h-[320px] max-h-[420px] object-cover"
+    />
+    {/* Gradient overlay so text is readable over the image */}
+    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/5" />
+
+    <div className="absolute inset-0 flex flex-col justify-end p-6 pb-8">
+      <h1 className="text-3xl sm:text-4xl font-black leading-tight">
+        <span className="bg-gradient-to-r from-green-300 via-green-200 to-white bg-clip-text text-transparent">
+          Raise Smart.
+          <br />
+          Grow Strong.
+        </span>
+      </h1>
+      <p className="text-white text-xl sm:text-2xl font-bold mt-2">
+        Transform Your Farm Today
+      </p>
+    </div>
+  </div>
+
+  <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8 pt-8 md:pt-0">
+    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+      <div className="space-y-5 sm:space-y-8 animate-fade-in-up">
+
+        {/* Desktop-only headline (shown next to the background image) */}
+        <h1 className="hidden md:block text-3xl lg:text-4xl xl:text-5xl font-black leading-tight">
+          <span className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 bg-clip-text text-transparent">
+            Raise Smart.
+            <br />
+            Grow Strong.
+          </span>
+          <br />
+          <span className="text-black text-2xl lg:text-3xl">
+            Transform Your Farm Today
+          </span>
+        </h1>
+
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-black leading-relaxed font-medium">
+          Kiota Poultry transforms your poultry farm with intelligent
+          monitoring, real-time alerts, and smart automation that keeps
+          your birds healthy and your business profitable.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+          <Link
+            to="/contact"
+            className="inline-flex items-center justify-center px-5 sm:px-6 md:px-8 py-3 sm:py-4 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-xl font-bold text-sm sm:text-base md:text-lg shadow-xl hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-all duration-300"
+          >
+            <span>Get a Demo</span>
+            <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+          </Link>
+          <Link
+            to="/contact"
+            state={{ openForm: "general" }}
+            className="inline-flex items-center justify-center px-5 sm:px-6 md:px-8 py-3 sm:py-4 bg-white text-green-600 rounded-xl font-bold text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1 transition-all duration-300 border-2 border-green-200"
+          >
+            Talk to an Expert
+          </Link>
         </div>
-      </section>
+
+        <div className="pt-1 sm:pt-4">
+          <p className="text-xs sm:text-sm text-black italic">
+            Helping poultry farms move from guesswork to data-driven
+            decisions.
+          </p>
+        </div>
+      </div>
+
+      {/* Desktop-only spacer column (image appears via section background above) */}
+      <div className="relative hidden md:block">
+        <div className="absolute inset-0 bg-gradient-to-br from-green-400 to-green-500 rounded-3xl blur-3xl opacity-20 animate-pulse"></div>
+      </div>
+    </div>
+  </div>
+</section>
       
 
       {/* About Us Section */}
@@ -402,7 +445,7 @@ const Home = () => {
           <div className="relative rounded-2xl sm:rounded-3xl rounded-br-none overflow-hidden shadow-2xl bg-black order-1 md:order-2 group">
             <video
               className="w-full h-[180px] sm:h-[220px] md:h-[300px] lg:h-[360px] object-cover group-hover:scale-105 transition-transform duration-500"
-              src="/video.mp4"
+              src="/try.mp4"
               controls
               preload="metadata"
             >
@@ -687,6 +730,7 @@ const Home = () => {
 
             <Link
               to="/contact"
+              state={{ openForm: "general" }}
               className="inline-block text-white bg-green-600 hover:bg-green-700 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base"
             >
               Book a Free Consultation
